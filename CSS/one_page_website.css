@@ -1,0 +1,19 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+/*-- CONTACT SECTION --*/
+.contact-info form {
+    width: 70%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+}
+
+.subscriber{
+    width: 10%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+}
