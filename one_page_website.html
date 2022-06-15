@@ -1,117 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Baseball lovers anonymous</title>
-		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css"
-	</head>
-	<body>
-		<!-- Nav -->
+
+<head>
+	<meta charset="utf-8">
+	<title>Baseball lovers anonymous</title>
+	<link rel="stylesheet" type="text/css" href="CSS/one_page_website.css">
+	<script src="JS/one_page_website.js"></script>
+</head>
+
+<body>
+	<!-- Nav -->
+	<div>
+		<div>
+			<ul>
+				<a href="#home" id="link">
+					<li>HOME</li>
+				</a>
+				<a href="#pictures" id="link">
+					<li>PICTURES</li>
+				</a>
+				<a href="#contact" id="link">
+					<li>CONTACT</li>
+				</a>
+				<a href="#videos" id="link">
+					<li>VIDEOS</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+	<!--end Nav-->
+
+	<!--Home-->
+	<div id="home">
 		<div>
 			<div>
-				<ul>
-					<a href="#home" id="link"><li>HOME</li></a>
-					<a href="#pictures" id="link"><li>PICTURES</li></a>
-					<a href="#contact" id="link"><li>CONTACT</li></a>
-					<a href="#videos" id="link"><li>VIDEOS</li></a>
-				</ul>
+				<span>How to throw different pitches</span>
 			</div>
 		</div>
-		<!--end Nav-->
-		
-		<!--Home-->
-		<div id="home">
-			<div>
-				<div>
-					<span>How to throw different pitches</span>
+	</div>
+	<!--end Home-->
+
+	<!--Lightbox images-->
+	<div class="row">
+		<div class="column">
+			<img src="images/image1.jfif" style="width:100%" onclick="openModal();currentSlide(1)"
+				class="hover-shadow cursor">
+		</div>
+		<div class="column">
+			<img src="images/image2.jfif" style="width:100%" onclick="openModal();currentSlide(2)"
+				class="hover-shadow cursor">
+		</div>
+		<div class="column">
+			<img src="images/image3.jfif" style="width:100%" onclick="openModal();currentSlide(3)"
+				class="hover-shadow cursor">
+		</div>
+		<div class="column">
+			<img src="images/image4.jfif" style="width:100%" onclick="openModal();currentSlide(4)"
+				class="hover-shadow cursor">
+		</div>
+	</div>
+
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="images/image1.jfif" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="images/image2.jfif" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="images/image3.jfif" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="images/image4.jfif" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+
+			<div class="column">
+				<img class="demo cursor" src="images/image1.jfif" style="width:100%" onclick="currentSlide(1)"
+					alt="fastball">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="images/image2.jfif" style="width:100%" onclick="currentSlide(2)"
+					alt="Curveball">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="images/image3.jfif" style="width:100%" onclick="currentSlide(3)"
+					alt="Changeup">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="images/image4.jfif" style="width:100%" onclick="currentSlide(4)"
+					alt="Knuckleball">
+			</div>
+		</div>
+	</div>
+
+	<!--Contact-->
+	<section>
+		<div id="contact">
+			<div class="container">
+				<h1 class="heading-padding">Contact us</h1>
+				<div class="contact-info">
+					<h2><span>Would you like to see us add something to our website?</span></h2>
+					<p>Please provide us with your contact information</p>
+					<div class="form-rsvp">
+						<form action="" method="post">
+							<input class="subscriber" type="text" value="First Name">
+							<input class="subscriber" type="text" value="Last Name">
+							<input class="subscriber" type="text" value="Email Address">
+							<input class="subscriber" type="text" value="Phone Number">
+							<div>
+								<input type="submit" value="Submit">
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
-		<!--end Home-->
-		
-		<!--Pictures-->
-		<section>
-			<div id="pictures">
-				<div>
-					<!--Photo 1-->
-					<div>
-						<div>
-							<p>Four-seamed fastball</p>
-							<img src="./images/image1.jfif" alt="This image isn't working">
-						</div>
-					</div>
-					<!--end Photo 1-->
-					<!--Photo 2-->
-					<div>
-						<div>
-							<p>Curveball</p>
-							<img src="./images/image2.jfif" alt="This image isn't working">   
-						</div>
-					</div>
-					<!--end Photo 2-->
-					<!--Photo 3-->
-					<div>
-						<div>
-							<p>Changeup</p>
-							<img src="./images/image3.jfif" alt="This image isn't working">   
-						</div>
-					</div>
-					<!--end Photo 3-->
-					<!--Photo 4-->
-					<div>
-						<div>
-							<p>Knuckleball</p>
-							<img src="./images/image4.jfif" alt="This image isn't working">   
-						</div>
-					</div>
-					<!--end Photo 4-->
-				</div>
-			</div>
-		</section>
-		<!--end Pictures-->
-		
-		<!--Contact-->
-		<section>
-			<div id="contact">
-				<div class="container">
-					<h1 class="heading-padding">Contact us</h1>
-					<div class="contact-info">
-						<h2><span>Would you like to see us add something to our website?</span></h2>
-						<p>Please provide us with your contact information</p>
-						<div class="form-rsvp">
-							<form action="" method="post">
-								<input class="subscriber" type="text" value="First Name">
-								<input class="subscriber" type="text" value="Last Name">
-								<input class="subscriber" type="text" value="Email Address">
-								<input class="subscriber" type="text" value="Phone Number">
-								<div>
-									<input type="submit" value="Submit">
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--end Contact-->
-		
-		<!--Videos-->
-		<div id="videos">
-			<div>
-				<p>This is what how pitches differ</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/84GtETrIglE" 
-					title="YouTube video player" frameborder="0" allow="accelerometer; 
+	</section>
+	<!--end Contact-->
+
+	<!--Videos-->
+	<div id="videos">
+		<div>
+			<p>This is what how pitches differ</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/84GtETrIglE"
+				title="YouTube video player" frameborder="0" allow="accelerometer; 
 					autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-				</iframe>
-			</div>
+			</iframe>
 		</div>
-		<!--end Videos-->
-		
-		<!--FOOTER-->
-		<div>
-			www.baseball.fandom &nbsp;|&nbsp;&copy; 2022
-		</div>
-		<!--End FOOTER-->
-	
-	</body>
+	</div>
+	<!--end Videos-->
+
+	<!--FOOTER-->
+	<div>
+		www.baseball.fandom &nbsp;|&nbsp;&copy; 2022
+	</div>
+	<!--End FOOTER-->
+
+</body>
+
 </html>
